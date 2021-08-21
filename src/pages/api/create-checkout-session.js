@@ -24,7 +24,7 @@ export default async (req, res) => {
         },
         line_items: transformedItem,
         mode: 'payment',
-        success_url: `${process.env.HOST}/seccess`,
+        success_url: `${process.env.HOST}/success`,
         cancel_url: `${process.env.HOST}/failed`,
         metadata: {
             email,
